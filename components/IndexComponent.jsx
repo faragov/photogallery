@@ -3,12 +3,13 @@ import { useTranslation } from "react-i18next";
 
 const IndexComponent = () => {
   const { t } =
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     typeof window !== "undefined" ? useTranslation() : { t: (key) => key };
   const sections = [
     { heading: "THEATRE", text: "Content for Section 1" },
     { heading: "FASHION", text: "Content for Section 2" },
     { heading: "PORTRAIT", text: "Content for Section 3" },
-    { heading: "WEDDING", text: "Content for Section 4" },
+    { heading: "EVENT", text: "Content for Section 4" },
     { heading: "ABOUT", text: "Content for Section 5" },
   ];
 

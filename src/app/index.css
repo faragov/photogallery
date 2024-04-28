@@ -332,7 +332,7 @@ body {
 }
 
 .el:nth-child(2) .el__bg {
-    transform: translate3d(-30.2%, 0, 0);
+    transform: translate3d(-52%, 0, 0);
 }
 
 .el:nth-child(2) .el__bg:before {
@@ -385,7 +385,7 @@ body {
 
 .el:nth-child(4) .el__bg:before {
     transition-delay: 0.3s;
-    background-image: url("../../public/images/DSC_9810-2\ copy.jpg");
+    background-image: url("../../public/images/DSC_9810-2 copy.jpg");
 }
 
 .el:nth-child(5) {
@@ -404,12 +404,12 @@ body {
 }
 
 .el:nth-child(5) .el__bg {
-    transform: translate3d(-76.8%, 0, 0);
+    transform: translate3d(-50.8%, 0, 0);
 }
 
 .el:nth-child(5) .el__bg:before {
     transition-delay: 0.4s;
-    background-image: url("../../public/images/Manon\ Lescaut\ hir\ 01.jpg");
+    background-image: url("../../public/images/Zsiros Aliz+Mother's best friend2 copy.jpg");
 }
 
 .el:hover .el__bg:after {
