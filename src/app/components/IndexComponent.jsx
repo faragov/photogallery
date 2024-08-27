@@ -89,6 +89,7 @@ const IndexComponent = () => {
         "/images/5/53.jpg",
         "/images/5/54.jpg",
         "/images/5/55.jpg",
+        "/images/5/56.jpg",
       ],
     },
   ];
