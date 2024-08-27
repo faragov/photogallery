@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { FacebookShareButton, FacebookIcon } from "next-share";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+//import { useTranslation } from "react-i18next";
 
 const IndexComponent = () => {
-  const { t } =
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    typeof window !== "undefined" ? useTranslation() : { t: (key) => key };
+  // const { t } =
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  //   typeof window !== "undefined" ? useTranslation() : { t: (key) => key };
 
   const sections = [
     {
-      heading: "THEATRE",
-      text: "THEATRE",
-      button: "Gallery",
+      heading: "SZÍNHÁZ",
+      text: "SZÍNHÁZ",
+      button: "Album",
       images: [
         "/images/1/1.jpg",
         "/images/1/11.jpg",
@@ -29,9 +31,9 @@ const IndexComponent = () => {
       ],
     },
     {
-      heading: "FASHION",
-      text: "FASHION",
-      button: "Gallery",
+      heading: "DIVAT",
+      text: "DIVAT",
+      button: "Album",
       images: [
         "/images/2/2.jpg",
         "/images/2/21.jpg",
@@ -45,9 +47,9 @@ const IndexComponent = () => {
       ],
     },
     {
-      heading: "PORTRAIT",
-      text: "PORTRAIT",
-      button: "Gallery",
+      heading: "PORTRÉ",
+      text: "PORTRÉ",
+      button: "Album",
       images: [
         "/images/3/30.jpg",
         "/images/3/31.jpg",
@@ -61,9 +63,9 @@ const IndexComponent = () => {
       ],
     },
     {
-      heading: "EVENT",
-      text: "EVENT",
-      button: "Gallery",
+      heading: "ESEMÉNY",
+      text: "ESEMÉNY",
+      button: "Album",
       images: [
         "/images/4/41.jpg",
         "/images/4/42.jpg",
@@ -77,9 +79,9 @@ const IndexComponent = () => {
       ],
     },
     {
-      heading: "PET",
-      text: "PET",
-      button: "Gallery",
+      heading: "KEDVENC",
+      text: "KEDVENC",
+      button: "Album",
       images: [
         "/images/5/50.jpg",
         "/images/5/51.jpg",
@@ -176,7 +178,7 @@ const IndexComponent = () => {
       {selectedGallery !== null && (
         <div className="gallery-popup">
           <button className="close-button" onClick={handleCloseGallery}>
-            Close
+            X
           </button>
           <div className="gallery-images">
             {sections[selectedGallery].images.map((image, idx) => (
@@ -228,6 +230,17 @@ const IndexComponent = () => {
           `}</style>
         </div>
       )}
+      <div>
+        <a
+          href="https://www.facebook.com/people/Zsiros-Aliz/100087907711378/?sk=about"
+          target="_blank"
+        >
+          <FaFacebook className="socialIcon" size={30} />
+        </a>
+        <a href="https://www.instagram.com/alizzsiros/" target="_blank">
+          <FaInstagram className="socialIcon" size={30} />
+        </a>
+      </div>
     </div>
   );
 };

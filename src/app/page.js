@@ -3,7 +3,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import "./index.css";
-import LanguageSwitcher from "./components/LanguageSwitcher";
+//import LanguageSwitcher from "./components/LanguageSwitcher";
 
 const DynamicIndexComponent = dynamic(
   () => import("./components/IndexComponent"),
@@ -16,7 +16,7 @@ const Page = () => {
       style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
     >
       <DynamicIndexComponent />
-      <LanguageSwitcher />
+      
     </div>
   );
 };
